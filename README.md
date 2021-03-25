@@ -3,16 +3,17 @@
 O Objetivo será fazer um pequeno diário do aprendizado, duvidas e linhas de pensamento a cada commit.
 
 ## Desafio 1
-- Cadastro de Autor
+Cadastro de Autor
 Iniciei com o projeto baseado no meu template que já uso a algum tempo.
 * controllers
-	* AutorController
+  * AutorController
 * models
-	* Autor
+  * Autor
 * repositories
-	* AutorRepository
+  * AutorRepository
 * dto
-	* AutorForm
+  * AutorForm
+
 De cara comparei a estrutura que usei com o que havia visto nos videos iniciais e percebi que realmente algumas coisas não fazem sentido pra um simple registro de autor.
 Criar uma interface extendendo de CrudRepository somente pra persistir um autor é meio forçar a barra.
 Fiz a refatoração pra usar o EntityManager direto no controller pra diminuir a complexidade e facilitar o entendimento. Assim foi eliminado a interface
